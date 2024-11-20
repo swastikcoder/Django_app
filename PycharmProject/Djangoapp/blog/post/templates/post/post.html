@@ -3,7 +3,12 @@
 {%block title %} {{post.title}} {% endblock title %}
 
 
-{%block content %} {{post.title}}
+
+{%block content %}
+
+<img src = "{{post.banner.url}}" alt = "{{post.title}}">
+
+{{post.title}}
 {{post.date}}
 {{post.body}}
 

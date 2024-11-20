@@ -6,6 +6,8 @@ class Post(models.Model):
     body = models.TextField()
     slug = models.SlugField()
     date = models.DateTimeField(auto_now_add=True)
+    banner = models.ImageField(default='fallback.jpg')
+
 
 
     def __str__(self):
