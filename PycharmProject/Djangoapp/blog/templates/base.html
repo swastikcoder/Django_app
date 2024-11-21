@@ -7,10 +7,18 @@
     <link  rel='stylesheet' href = "{% static 'css/style.css' %}" >
 </head>
 <body>
+<navbar>
+  <nav><a href = "{% url 'posts'%}">posts</a></nav>
+ <nav><a href = "{% url 'user'%}">users</a></nav>
+
+
+    <nav> <a href = "{%url 'register'%}">register a user baku</a></nav>
+
+
+</navbar>
+
 {%block content %}
-<a href = "post/">posts</a>
-<a href = "users/">users</a>
-<a href = "users/register">register a user baku</a>
+
 
 <h1> This is my home page</h1>
 <p> This is <a href = "{% url 'about'%}"> about</a> page</p>
