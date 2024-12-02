@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{%block title %}write a new post {% endblock title %}
+
+
+
+{%block content %}
+<form  action = "{%url 'new-post'%}" method = 'post' enctype="multipart/form-data">
+
+{%csrf_token%}
+  {{form}}
+  <button>Add Post</button>
+
+</form>
+
+
+{%endblock %}

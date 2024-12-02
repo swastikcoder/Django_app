@@ -12,6 +12,12 @@
  <nav><a href = "{% url 'user'%}">users</a></nav>
     <nav><a href = "{%url 'login'%}" >login baku </a></nav>
     <nav> <a href = "{%url 'register'%}">register a user baku</a></nav>
+        <nav><a href = "{%url 'new-post' %}"> Make a new post</a>    </nav>
+        <nav><form action = "{%url 'logout'%}"  method = 'POST'>
+            {% csrf_token %}
+           <button>logout baku</button>  </form></nav>
+
+
 
 
 </navbar>

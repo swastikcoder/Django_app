@@ -4,9 +4,9 @@
 
 {%block content %}
 {% for post in posts %}
-<ul>x
+<ul>
  <li> <a href = "{%url 'post' slug=post.slug%}">{{post.title}}
-  {{post.name}} </a></li>
+  {{post.name}}-by {{post.author}} </a></li>
 
 </ul>
 
